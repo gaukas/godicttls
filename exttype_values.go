@@ -73,7 +73,7 @@ const (
 	ExtType_channel_id                uint16 = 30032 // https://datatracker.ietf.org/doc/html/draft-balfanz-tls-channelid-01
 )
 
-var Uint16MapToString = map[uint16]string{
+var DictExtTypeValueIndexed = map[uint16]string{
 	0:     "server_name",
 	1:     "max_fragment_length",
 	2:     "client_certificate_url",
@@ -140,7 +140,7 @@ var Uint16MapToString = map[uint16]string{
 	30032: "channel_id",
 }
 
-var StringToUint16 = map[string]uint16{
+var DictExtTypeNameIndexed = map[string]uint16{
 	"server_name":                            0,
 	"max_fragment_length":                    1,
 	"client_certificate_url":                 2,
