@@ -4,18 +4,18 @@ package godicttls
 // last updated: March 2023
 
 const (
-	CertCompAlg_zlib   uint8 = 1
-	CertCompAlg_brotli uint8 = 2
-	CertCompAlg_zstd   uint8 = 3
+	CertCompAlg_zlib   uint16 = 1
+	CertCompAlg_brotli uint16 = 2
+	CertCompAlg_zstd   uint16 = 3
 )
 
-var DictCertificateCompressionAlgorithmValueIndexed = map[uint8]string{
+var DictCertificateCompressionAlgorithmValueIndexed = map[uint16]string{
 	1: "zlib",
 	2: "brotli",
 	3: "zstd",
 }
 
-var DictCertificateCompressionAlgorithmNameIndexed = map[string]uint8{
+var DictCertificateCompressionAlgorithmNameIndexed = map[string]uint16{
 	"zlib":   1,
 	"brotli": 2,
 	"zstd":   3,
